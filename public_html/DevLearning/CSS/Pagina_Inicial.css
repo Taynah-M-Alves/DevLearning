@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar {
+    background: #333;
+    padding: 4px 0;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px; /* Altura da navbar */
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li h1{
+    font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
+    font-size: 20px;
+    color: white;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.navbar ul li a:hover {
+    text-decoration: underline;
+}
+
+header {
+    background: #007BFF;
+    color: white;
+    padding: 180px 0;
+    text-align: center;
+    background-image: url(../assets/Fundo\ 1.webp);
+    background-size: cover;
+}
+
+header h1 {
+    font-size: 2.5em;
+    color: black;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2em;
+    color: black;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.btn {
+    background: #28A745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #218838;
+}
+
+main {
+    padding: 20px 0;
+}
+
+.about {
+    text-align: center;
+    margin: 40px 0;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.about .container h2{
+    margin-top: 20px;
+}
+
+.about .container p{
+   color: black;
+   margin-bottom: 30px;
+   margin-top: 12px;
+}
+
+.values {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.values li {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.features {
+    text-align: center;
+    width: 980px;
+    margin: 0 auto;
+}
+
+.feature {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Estilos gerais da seção de produtos */
+.products {
+    text-align: center;
+    margin: 40px 0;
+    width: 80rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Estilos para o contêiner de cards */
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Estilos para cada card */
+.card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    height: 390px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para a imagem do produto */
+.card img {
+    width: 120px; /* Manter a imagem em tamanho fixo */
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo para o nome do produto */
+.card h2 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Estilo para a descrição do produto */
+.card p {
+    color: #555;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Estilo para o preço */
+.preco {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo para o botão de compra */
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}

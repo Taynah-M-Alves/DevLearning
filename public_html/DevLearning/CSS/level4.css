@@ -1,0 +1,154 @@
+*{
+    margin: 0 auto;
+    max-height: 100%;
+  }
+  
+  
+  body {
+      font-family: 'Roboto', sans-serif; /* Uma fonte moderna e popular */
+      background-color: #222;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      width: 93.5rem;
+    }
+    
+    nav {
+      background-color: #333;
+      color: #fff;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+      width: 100%;
+    }
+    
+    .level-title {
+      text-align: center;
+      margin-top: 2rem;
+      color: #838383;
+    }
+  
+    .level-description{
+      text-align: center;
+      margin-top: 0.1rem;
+      font-size: 25px;
+      color: #838383;
+      margin-bottom: 20px;
+    }
+
+/* Estilos para o container principal */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #222;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  /* Estilos para cada div que contém o relato */
+  .container > div {
+    background-color: #9b0808;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    flex-basis: calc(33% - 40px); /* Define a largura de cada box */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Estilos para a imagem */
+  .container img {
+    border-radius: 50%;
+    width: 100%;
+    height: 10%;
+    object-fit: cover;
+  }
+  
+  /* Estilos para o nome do cliente */
+  .container h3 {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  /* Estilos para o relato */
+  .container p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  /* Responsividade para tablets */
+  @media (max-width: 1024px) {
+    .container > div {
+      flex-basis: calc(50% - 40px); /* Duas colunas em telas médias */
+    }
+  
+    .container h3 {
+      font-size: 1.1em;
+    }
+  
+    .container p {
+      font-size: 0.95em;
+    }
+  }
+  
+  /* Responsividade para smartphones */
+  @media (max-width: 768px) {
+    .container > div {
+      flex-basis: 100%; /* Uma coluna em telas pequenas */
+      margin: 10px 0;
+    }
+  
+    .container img {
+      width: 80px;
+      height: 80px;
+    }
+  
+    .container h3 {
+      font-size: 1em;
+    }
+  
+    .container p {
+      font-size: 0.9em;
+    }
+  }
+  
+  /* Responsividade para telas muito pequenas */
+  @media (max-width: 480px) {
+    .container > div {
+      padding: 15px;
+    }
+  
+    .container img {
+      width: 70px;
+      height: 70px;
+    }
+  
+    .container h3 {
+      font-size: 0.95em;
+    }
+  
+    .container p {
+      font-size: 0.85em;
+    }
+  }
+  

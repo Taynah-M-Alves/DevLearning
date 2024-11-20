@@ -1,0 +1,207 @@
+* Estilos Globais */
+/* Estilos para Botões de Navegação */
+.navegacao-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.navegacao-header .btn {
+  display: inline-block;
+  background-color: #28a745; /* Cor do botão */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+.navegacao-header .btn:hover {
+  background-color: #218838; /* Cor do botão ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.navegacao-header .btn:active {
+  transform: translateY(0); /* Retorna à posição original quando pressionado */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #222; /* Cor de fundo preta */
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #040404;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; /* Distribui espaço entre os itens */
+  align-items: center; /* Alinha itens verticalmente */
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.navegacao-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ocupa toda a largura do cabeçalho */
+  align-items: center; /* Alinha itens verticalmente */
+}
+
+.navegacao-header .btn {
+  margin: 0 10px; /* Margem lateral entre os botões */
+}
+
+/* Título principal da página */
+.main-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.main-title p {
+  font-size: 1.2em;
+}
+
+/* Seção de Depoimentos */
+.depoimentos {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #ffffff; /* Cor de fundo branca para a seção de depoimentos */
+}
+
+.depoimentos h2 {
+  margin-bottom: 40px;
+}
+
+.depoimentos-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.depoimento {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  max-width: 350px; /* Ajuste a largura máxima */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.depoimento:hover {
+  transform: scale(1.02); /* Efeito de hover */
+}
+
+.depoimento img {
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.texto-depoimento {
+  color: #ffffff; /* Cor do texto dentro do depoimento */
+}
+
+.depoimento h4 {
+  margin: 10px 0;
+  font-size: 1.2em;
+  color: #222;
+}
+
+.depoimento span {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.depoimento p {
+  font-size: 1em;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Seção de Objetivo */
+.objetivo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.objetivo h2 {
+  margin-bottom: 20px;
+}
+
+.objetivo p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Nova Seção de Importância da Responsividade */
+.importancia-responsividade {
+  background-color: #222; /* Cor de fundo escura */
+  padding: 40px 20px; /* Espaçamento interno */
+  text-align: center; /* Centralizar texto */
+  color: white; /* Cor do texto */
+  border-radius: 8px; /* Cantos arredondados */
+  margin: 40px 0; /* Margem superior e inferior */
+}
+
+.importancia-responsividade h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 2em; /* Tamanho do título */
+}
+
+.importancia-responsividade ul {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove espaçamento padrão */
+}
+
+.importancia-responsividade li {
+  background-color: white; /* Cor de fundo branca para os itens da lista */
+  color: #222; /* Cor do texto */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  margin: 10px 0; /* Margem entre itens da lista */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+/* Rodapé */
+footer {
+  background-color: #040404;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento {
+    max-width: 90%;
+  }
+}
