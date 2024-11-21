@@ -1,45 +1,83 @@
-*{
-  margin: 0 auto;
-  max-height: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+.navegacao-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
 }
 
+.navegacao-header .btn {
+  display: inline-block;
+  background-color: #28a745; /* Cor do botão */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1em;
+  transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+}
+
+.navegacao-header .btn:hover {
+  background-color: #218838; /* Cor do botão ao passar o mouse */
+  transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+}
+
+.navegacao-header .btn:active {
+  transform: translateY(0); /* Retorna à posição original quando pressionado */
+}
 
 body {
-    font-family: 'Roboto', sans-serif; /* Uma fonte moderna e popular */
-    background-color: #222;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-    width: 93.5rem;
-  }
-  
-  nav {
-    background-color: #333;
-    color: #fff;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    width: 100%;
-  }
-  
-  .level-title {
-    text-align: center;
-    margin-top: 2rem;
-    color: #838383;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #222; /* Cor de fundo preta */
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .level-description{
-    text-align: center;
-    margin-top: 0.1rem;
-    font-size: 25px;
-    color: #838383;
-    margin-bottom: 20px;
-  }
+/* Cabeçalho */
+header {
+  background-color: #333;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; /* Distribui espaço entre os itens */
+  align-items: center; /* Alinha itens verticalmente */
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
+}
+
+.navegacao-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Ocupa toda a largura do cabeçalho */
+  align-items: center; /* Alinha itens verticalmente */
+}
+
+.navegacao-header .btn {
+  margin: 0 10px; /* Margem lateral entre os botões */
+}
+
+/* Título principal da página */
+.main-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.main-title p {
+  font-size: 1.2em;
+}
 
   .example-container{
     width: 80rem;
@@ -48,14 +86,7 @@ body {
     align-self: center;
   }
 
-  .body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
+
   
   .card {
     background-color: #fff;

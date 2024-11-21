@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+.navegacao-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .navegacao-header .btn {
+    display: inline-block;
+    background-color: #28a745; /* Cor do botão */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para profundidade */
+  }
+  
+  .navegacao-header .btn:hover {
+    background-color: #218838; /* Cor do botão ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação ao passar o mouse */
+  }
+  
+  .navegacao-header .btn:active {
+    transform: translateY(0); /* Retorna à posição original quando pressionado */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #222; /* Cor de fundo preta */
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #333;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between; /* Distribui espaço entre os itens */
+    align-items: center; /* Alinha itens verticalmente */
+  }
+
+  header h1 {
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
+  }
+  
+  .navegacao-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ocupa toda a largura do cabeçalho */
+    align-items: center; /* Alinha itens verticalmente */
+  }
+  
+  .navegacao-header .btn {
+    margin: 0 10px; /* Margem lateral entre os botões */
+  }
+  
+  /* Título principal da página */
+  .main-title {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .main-title h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  }
+  
+  .main-title p {
+    font-size: 1.2em;
+  }

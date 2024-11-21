@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
+
+
 * Estilos Globais */
 /* Estilos para Botões de Navegação */
 .navegacao-header {
@@ -39,7 +42,7 @@ body {
 
 /* Cabeçalho */
 header {
-  background-color: #040404;
+  background-color: #333;
   padding: 15px;
   display: flex;
   justify-content: space-between; /* Distribui espaço entre os itens */
@@ -50,6 +53,7 @@ header h1 {
   margin: 0;
   color: white;
   text-align: center;
+  font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
 }
 
 .navegacao-header {
