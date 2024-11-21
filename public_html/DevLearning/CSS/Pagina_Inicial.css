@@ -13,7 +13,7 @@ body {
 }
 
 .navbar {
-    background: #333;
+    background: #040404;
     padding: 4px 0;
 }
 
@@ -29,7 +29,7 @@ body {
     margin: 0 15px;
 }
 
-.navbar ul li h1{
+.navbar ul li h1 {
     font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
     font-size: 20px;
     color: white;
@@ -41,7 +41,6 @@ body {
     align-items: center;
     flex-grow: 1;
 }
-
 
 .navbar ul li a {
     color: white;
@@ -99,14 +98,14 @@ main {
     margin: 0 auto;
 }
 
-.about .container h2{
+.about .container h2 {
     margin-top: 20px;
 }
 
-.about .container p{
-   color: black;
-   margin-bottom: 30px;
-   margin-top: 12px;
+.about .container p {
+    color: black;
+    margin-bottom: 30px;
+    margin-top: 12px;
 }
 
 .values {
@@ -236,4 +235,136 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
+}
+
+/* Media Queries para Responsividade */
+
+/* Mobile: Telas menores que 768px */
+@media (max-width: 768px) {
+    /* Ajustando o layout da navbar */
+    .navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 20px;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .navbar ul li h1 {
+        font-size: 18px;
+    }
+
+    /* Ajustando o cabeçalho */
+    header {
+        padding: 120px 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+
+    /* Ajustando o conteúdo da seção "Sobre" */
+    .about .container {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .about .container h2 {
+        font-size: 1.8em;
+    }
+
+    .about .container p {
+        font-size: 1em;
+    }
+
+    /* Ajustando os cards de produtos */
+    .product-container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px;
+    }
+
+    .card {
+        width: 100%;
+        height: auto;
+    }
+
+    .card img {
+        width: 100px;
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .card button {
+        padding: 12px 25px;
+    }
+
+    /* Ajustando a largura da seção de recursos */
+    .features {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .feature {
+        margin: 15px 0;
+    }
+}
+
+/* Tablet: Telas entre 768px e 1024px */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .navbar ul {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .product-container {
+        gap: 15px;
+    }
+
+    .card {
+        width: 250px;
+    }
+
+    header h1 {
+        font-size: 2.3em;
+    }
+
+    header p {
+        font-size: 1.1em;
+    }
+}
+
+/* Desktop: Telas maiores que 1024px */
+@media (min-width: 1024px) {
+    .navbar ul {
+        justify-content: space-between;
+    }
+
+    .product-container {
+        gap: 20px;
+    }
+
+    .card {
+        width: 280px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
 }
