@@ -78,3 +78,21 @@
   .main-title p {
     font-size: 1.2em;
   }
+  footer{
+    display:flex;
+    justify-content: center;
+    background-color: white;
+    height: 390px;
+    align-content: center;
+    align-items: center;
+
+  }
+
+  footer .container{
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 18px 0;
+    width: 1000px;
+    height: 320px;
+}
