@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&display=swap');
 
+
+* Estilos Globais */
+/* Estilos para Botões de Navegação */
 .navegacao-header {
   display: flex;
   justify-content: space-between;
@@ -77,4 +80,99 @@ header h1 {
 
 .main-title p {
   font-size: 1.2em;
+}
+
+main {
+  padding: 20px 0;
+  }
+
+  .features {
+    text-align: center;
+    width: 980px;
+    margin: 0 auto;
+    background-color: white;
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.features h2{
+  color: #040404;
+}
+
+.feature {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    color: #040404;
+    width: 1000px;
+}
+
+/* Seção de Objetivo */
+.objetivo {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.objetivo h2 {
+  margin-bottom: 20px;
+}
+
+.objetivo p {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+/* Nova Seção de Importância da Responsividade */
+.importancia-responsividade {
+  background-color: #222; /* Cor de fundo escura */
+  padding: 40px 20px; /* Espaçamento interno */
+  text-align: center; /* Centralizar texto */
+  color: white; /* Cor do texto */
+  border-radius: 8px; /* Cantos arredondados */
+  margin: 40px 0; /* Margem superior e inferior */
+}
+
+.importancia-responsividade h2 {
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-size: 2em; /* Tamanho do título */
+}
+
+.importancia-responsividade ul {
+  list-style-type: none; /* Remove marcadores da lista */
+  padding: 0; /* Remove espaçamento padrão */
+}
+
+.importancia-responsividade li {
+  background-color: white; /* Cor de fundo branca para os itens da lista */
+  color: #222; /* Cor do texto */
+  padding: 15px; /* Espaçamento interno */
+  border-radius: 5px; /* Cantos arredondados */
+  margin: 10px 0; /* Margem entre itens da lista */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave para profundidade */
+}
+
+/* Rodapé */
+footer {
+  background-color: #040404;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .depoimentos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .depoimento {
+    max-width: 90%;
+  }
 }
