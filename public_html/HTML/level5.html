@@ -23,20 +23,213 @@
     <div class="example-container">
         <div class="card-container">
           <div class="card">
-            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.webp" alt="Imagem do Produto">
+            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.jpeg" alt="Imagem do Produto">
             <h2>Nome do Produto</h2>
             <p>Descrição detalhada do produto, destacando seus principais benefícios.</p>
             <div class="preco">R$ 99,99</div>
             <button>Comprar</button>
           </div>
+
+          <div class="card">
+            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.jpeg" alt="Imagem do Produto">
+            <h2>Nome do Produto</h2>
+            <p>Descrição detalhada do produto, destacando seus principais benefícios.</p>
+            <div class="preco">R$ 99,99</div>
+            <button>Comprar</button>
+          </div>
+
+          <div class="card">
+            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.jpeg" alt="Imagem do Produto">
+            <h2>Nome do Produto</h2>
+            <p>Descrição detalhada do produto, destacando seus principais benefícios.</p>
+            <div class="preco">R$ 99,99</div>
+            <button>Comprar</button>
+          </div>
+
+          <div class="card">
+            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.jpeg" alt="Imagem do Produto">
+            <h2>Nome do Produto</h2>
+            <p>Descrição detalhada do produto, destacando seus principais benefícios.</p>
+            <div class="preco">R$ 99,99</div>
+            <button>Comprar</button>
+          </div>
+
+          <div class="card">
+            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.jpeg" alt="Imagem do Produto">
+            <h2>Nome do Produto</h2>
+            <p>Descrição detalhada do produto, destacando seus principais benefícios.</p>
+            <div class="preco">R$ 99,99</div>
+            <button>Comprar</button>
+          </div>
+
+          <div class="card">
+            <img src="../DevLearning/assets/caneca-code-on-ceh2701tyw.jpeg" alt="Imagem do Produto">
+            <h2>Nome do Produto</h2>
+            <p>Descrição detalhada do produto, destacando seus principais benefícios.</p>
+            <div class="preco">R$ 99,99</div>
+            <button>Comprar</button>
+          </div>
+
         </div>
     </div>
 
     <div class="objective-container">
-    <h1 class="level-title">Objetivo</h1>
-    <h3>Seu Objetivo nesse level é criar um card simples que se adapte a diferentes tamanhos de tela, mantendo um layout organizado e visualmente agradável. </h3>
-
+      <h1 class="level-title">Objetivo</h1>
+      <h3>Neste nível, seu objetivo é aprender a criar um card de produto responsivo, que se adapta a diferentes tamanhos de tela e se organiza de forma agradável dentro de um container com múltiplos cards.</h3>
     </div>
+  
+    <div class="explanation-container">
+      <h3>O que é um card de produto?</h3>
+      <p>Um card de produto é uma pequena seção visual em um site ou e-commerce que exibe informações básicas sobre um produto, como imagem, título, descrição e preço. Ele é usado para chamar a atenção do usuário e incentivá-lo a realizar uma compra ou interagir com o produto de alguma forma.</p>
+    </div>
+
+    <div class="step-container">
+      <h3>Como Criar o Card de Produto</h3>
+      <p>Aqui vamos ensinar o passo a passo para construir o card de produto, que é um elemento essencial para qualquer loja online. Vamos criar um card simples que contém a imagem do produto, seu nome, uma descrição, o preço e um botão para realizar a compra. Vamos dividir isso em etapas fáceis de entender.</p>
+      
+      <h4>Passo 1: Criar a Estrutura HTML do Card</h4>
+      <p>A estrutura HTML do card é bastante simples. Vamos criar uma <code>&lt;div&gt;</code> para representar o card, e dentro dela vamos colocar as informações do produto. Aqui está o código básico:</p>
+      
+      <pre>
+        <code>
+          &lt;class="card"&gt;
+            &lt;img src="imagem-do-produto.jpg" alt="Imagem do Produto"&gt;
+            &lt;h2&gt;Nome do Produto&lt;/h2&gt;
+            &lt;p&gt;Descrição do produto&lt;/p&gt;
+            &lt;div class="preco"&gt;R$ 99,99&lt;/div&gt;
+            &lt;button&gt;Comprar&lt;/button&gt;
+            &lt;div&gt;
+        </code>
+      </pre>
+
+      <p>Este código cria a estrutura básica do card, com os seguintes elementos:</p>
+
+      <ul>
+        <li><strong>&lt;img&gt;</strong>: A imagem do produto.</li>
+        <li><strong>&lt;h2&gt;</strong>: O nome do produto.</li>
+        <li><strong>&lt;p&gt;</strong>: A descrição do produto.</li>
+        <li><strong>&lt;div class="preco"&gt;</strong>: O preço do produto.</li>
+        <li><strong>&lt;button&gt;</strong>: O botão para realizar a compra.</li>
+      </ul>
+    
+      <h4>Passo 2: Estilizando o Card com CSS</h4>
+      <p>Agora vamos adicionar estilos para que o card fique bonito e organizado. No CSS, vamos trabalhar com o fundo, o tamanho, o sombreamento e o alinhamento dos itens. Aqui está como você pode fazer isso:</p>
+      
+      <pre>
+        <code>
+          .card {
+            background-color: #fff; /* Cor de fundo branca */ 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao redor do card */
+            border-radius: 10px; /* Bordas arredondadas */
+            padding: 20px; /* Espaçamento interno */
+            text-align: center; /* Alinha os itens no centro */
+            width: 280px; /* Largura do card */
+            height: fit-content; /* Altura ajustada ao conteúdo */
+            display: flex; /* Flexbox para organizar os itens */
+            flex-direction: column; /* Coloca os itens na vertical */
+            justify-content: center; /* Centraliza verticalmente */
+            align-items: center; /* Centraliza horizontalmente */
+          }
+        </code>
+      </pre>
+      
+      <p>Com esse estilo, estamos dizendo ao navegador para criar um card com fundo branco, bordas arredondadas, sombra e centralização dos conteúdos. Usamos <code>flexbox</code> para facilitar o alinhamento e organização dos itens dentro do card.</p>
+    
+      <h4>Passo 3: Estilizando a Imagem</h4>
+      <p>Para a imagem do produto, queremos que ela tenha uma largura ajustada e bordas arredondadas. Aqui está o código para isso:</p>
+      
+      <pre>
+        <code>
+          .card img {
+            max-width: 40%; /* A imagem ocupará no máximo 40% da largura do card */
+            height: auto; /* Mantém a proporção da imagem */
+            border-radius: 10px; /* Bordas arredondadas na imagem */
+            margin-top: 15px; /* Espaçamento superior */
+          }
+        </code>
+      </pre>
+      
+      <p>Este estilo faz com que a imagem fique dentro do card e tenha bordas arredondadas, além de ajustar seu tamanho automaticamente para não ultrapassar 40% da largura do card.</p>
+    
+      <h4>Passo 4: Estilizando o Texto do Card</h4>
+      <p>Agora vamos adicionar estilo ao nome, descrição e preço do produto:</p>
+      
+      <pre>
+        <code>
+          .card h2 {
+            color: #222; /* Cor do texto do nome do produto */
+            margin-top: 20px; /* Espaçamento superior */
+            margin-bottom: 10px; /* Espaçamento inferior */
+            width: 70%; /* A largura do nome será de 70% do card */
+          }
+    
+          .card p {
+            color: #222; /* Cor do texto da descrição */
+            margin-bottom: 20px; /* Espaçamento inferior */
+            width: 70%; /* A largura da descrição será de 70% do card */
+          }
+    
+          .preco {
+            font-weight: bold; /* Deixa o preço em negrito */
+            color: #333; /* Cor do texto do preço */
+            text-align: center; /* Alinha o preço ao centro */
+          }
+        </code>
+      </pre>
+      
+      <p>Esses estilos ajudam a tornar o texto mais legível e agradável visualmente. O nome e a descrição têm larguras definidas e margens para criar um espaçamento adequado.</p>
+    
+      <h4>Passo 5: Estilizando o Botão</h4>
+      <p>Por fim, vamos adicionar estilo ao botão, para que ele se destaque e seja fácil de clicar. Veja como fazer isso:</p>
+      
+      <pre>
+        <code>
+          button {
+            background-color: #4CAF50; /* Cor de fundo verde */
+            color: white; /* Cor do texto branco */
+            padding: 15px 32px; /* Espaçamento interno */
+            text-align: center; /* Alinha o texto ao centro */
+            text-decoration: none; /* Remove o sublinhado */
+            display: inline-block; /* Coloca o botão em linha */
+            font-size: 16px; /* Tamanho da fonte */
+            margin-top: 10px; /* Espaçamento superior */
+            border: none; /* Remove a borda */
+            border-radius: 4px; /* Bordas arredondadas */
+            cursor: pointer; /* Cursor de mão ao passar o mouse */
+          }
+    
+          button:hover {
+            background-color: #3e8e41; /* Muda a cor quando o mouse passa por cima */
+          }
+        </code>
+      </pre>
+      
+      <p>Agora o botão terá uma cor de fundo verde, texto branco e um efeito de hover que altera a cor quando o usuário passa o mouse sobre ele. Isso dá uma sensação de interatividade e torna o botão mais atraente.</p>
+    
+      <h4>Passo 6: Tornando o Card Responsivo</h4>
+      <p>Finalmente, para garantir que o card se ajuste a diferentes tamanhos de tela, vamos usar o Flexbox no container dos cards e o conceito de *media queries* no CSS. Isso faz com que os cards se ajustem de maneira inteligente, dependendo do tamanho da tela do dispositivo.</p>
+    
+      <pre>
+        <code>
+          .card-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap; /* Faz os cards quebrarem linha quando necessário */
+          }
+    
+          @media (max-width: 768px) {
+            .card-container {
+              justify-content: flex-start; /* Alinha os cards à esquerda em telas menores */
+            }
+          }
+        </code>
+      </pre>
+      
+      <p>Com isso, a exibição dos cards vai mudar conforme o tamanho da tela. Se o usuário estiver em um dispositivo móvel, os cards irão se alinhar corretamente e ocupar o espaço de maneira otimizada.</p>
+    </div>
+  
 
     <script src="script.js"></script>
 </body>
