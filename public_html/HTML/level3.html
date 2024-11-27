@@ -1,44 +1,105 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>DevLearning</title>
     <link rel="stylesheet" href="../DevLearning/CSS/level3.css">
 </head>
+
 <body>
-<!-- Cabeçalho -->
-<header>
-    <div class="navegacao-header">
-      <a href="level2.html" class="btn">Voltar uma fase</a>
-      <h1>DevLearning</h1>
-      <a href="level4.html" class="btn">Próxima fase</a>
-    </div>
-  </header>
+    <!-- CabeÃ§alho -->
+    <header>
+        <div class="navegacao-header">
+          <a href="level2.html" class="btn">Voltar uma fase</a>
+          <h1>DevLearning</h1>
+          <a href="level4.html" class="btn">Próxima fase</a>
+        </div>
+    </header>
+    <!-- TÃ­tulo principal da pÃ¡gina -->
+    <section class="main-title">
+        <div class="container">
+            <h2>Level 3</h2>
+            <div class="description-content">
+                <div class="description-text">
+                    <h4>
+                        A seção "Sobre Nós" é um bloco de conteúdo destinado a apresentar informações sobre o propósito
+                        e os
+                        valores do DevLearning. A estrutura e o conteúdo dessa seção foram organizados para:
+                    </h4>
+                    <ul class="itens">
+                        <li><strong>Descrição do Propósito:</strong> Explica o motivo da criação do DevLearning, que é
+                            ajudar iniciantes a desenvolver habilidades básicas de HTML e CSS.</li>
+                        <li><strong>Apresentação dos Valores:</strong> Exibe os valores fundamentais da iniciativa, como
+                            acessibilidade, inovação, empatia e compartilhamento de conhecimento.</li>
+                        <li><strong>Design e Organização:</strong> Utiliza um layout flexível para dividir o texto e
+                            imagens (se adicionadas) de forma equilibrada.</li>
+                        <li><strong>Empatia:</strong> Sabemos que a jornada de aprendizado pode ser difícil e estamos
+                            aqui
+                            para ajudar.</li>
+                    </ul>
+                    <h4>
+                        O CSS responsivo aplicado na seção "Sobre Nós" é projetado para garantir que o layout se adapte
+                        a diferentes tamanhos de tela, proporcionando uma boa experiência em dispositivos móveis e
+                        desktops. As principais características são:
+                    </h4>
+                    <h4>Layout Flexível:</h4>
+                    <ul class="itens">
+                        <li>A classe <strong>.about-content</strong> utiliza o Flexbox para alinhar e organizar o
+                            conteúdo horizontalmente em telas maiores.</li>
+                        <li>Com o atributo <strong>flex-wrap</strong>, os elementos dentro dessa seção podem ser
+                            reorganizados para caber em espaços menores.</li>
+                    </ul>
+                    <h4>Adaptação em Telas Menores:</h4>
+                    <ul class="itens">
+                        <li>Usando media queries (@media), o layout muda para uma estrutura vertical em telas menores,
+                            com os elementos empilhados um sobre o outro.</li>
+                        <li>Para dispositivos com largura abaixo de 768px, a orientação muda de horizontal para vertical
+                            com a propriedade <strong>flex-direction: column.</strong></li>
+                        <li>Para dispositivos ainda menores, abaixo de 480px, os tamanhos de fonte e margens são
+                            reduzidos para melhorar a legibilidade.</li>
+                    </ul>
+                    <h4>Estilos Dinâmicos:</h4>
+                    <ul class="itens">
+                        <li>Tamanhos de fonte e espaçamentos são ajustados para evitar que textos fiquem muito pequenos
+                            ou muito apertados.</li>
+                        <li>As imagens, caso usadas, são redimensionadas automaticamente com <strong>width: 100% e height: auto</strong>,
+                            garantindo que não ultrapassem os limites da tela.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- Título principal da página -->
-  <section class="main-title">
-    <h2>Level 3</h2>
-    <p>Descrição</p>
-  </section>
 
-    <!-- Seção Sobre Nós -->
-    <section class="about">
-      <div class="container">
-          <h2>Sobre o DevLearning</h2>
-          <p>
-              O DevLearning foi criado em 2024 por quatro estudantes de Engenharia de Software com o objetivo de ajudar iniciantes a aprenderem como criar sua primeira landing page usando HTML e CSS.
-          </p>
-          <p>
-              A ideia surgiu após enfrentarmos desafios semelhantes no primeiro semestre da faculdade, ao tentarmos criar nosso primeiro site. Decidimos compartilhar nossa experiência e ajudar outras pessoas a superarem essas dificuldades de forma prática e acessível.
-          </p>
-          <h3>Valores do DevLearning</h3>
-          <ul class="values">
-              <li><strong>Acessibilidade:</strong> Tornamos o aprendizado fácil e acessível para todos.</li>
-              <li><strong>Inovação:</strong> Estamos sempre atualizados com as últimas tendências de web design.</li>
-              <li><strong>Compartilhamento de Conhecimento:</strong> Acreditamos no poder do aprendizado colaborativo.</li>
-              <li><strong>Empatia:</strong> Sabemos que a jornada de aprendizado pode ser difícil e estamos aqui para ajudar.</li>
-          </ul>
-      </div>
-  </section>
-  
+    <!-- SeÃ§Ã£o Sobre NÃ³s -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre o DevLearning</h2>
+                    <p>
+                        O DevLearning foi criado em 2024 por quatro estudantes de Engenharia de Software com o objetivo
+                        de ajudar iniciantes a aprenderem como criar sua primeira landing page usando HTML e CSS.
+                    </p>
+                    <p>
+                        A ideia surgiu após enfrentarmos desafios semelhantes no primeiro semestre da faculdade, ao
+                        tentarmos criar nosso primeiro site. Decidimos compartilhar nossa experiência e ajudar outras
+                        pessoas a superarem essas dificuldades de forma prática e acessível.
+                    </p>
+                    <h3>Valores do DevLearning</h3>
+                    <ul class="values">
+                        <li><strong>Acessibilidade:</strong> Tornamos o aprendizado fácil e acessível para todos.</li>
+                        <li><strong>Inovação:</strong> Estamos sempre atualizados com as últimas tendências de web
+                            design.</li>
+                        <li><strong>Compartilhamento de Conhecimento:</strong> Acreditamos no poder do aprendizado
+                            colaborativo.</li>
+                        <li><strong>Empatia:</strong> Sabemos que a jornada de aprendizado pode ser difícil e estamos
+                            aqui para ajudar.</li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+
 </body>
+
 </html>
