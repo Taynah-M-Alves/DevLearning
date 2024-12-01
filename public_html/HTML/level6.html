@@ -4,43 +4,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DevLearning - Level 3</title>
+  <title>DevLearning - Level 6</title>
   <link rel="stylesheet" href="../DevLearning/CSS/level6.css">
 </head>
 
 <body>
 
-  <!-- Cabeçalho -->
+  <!-- Cabeçalho com Navbar -->
   <header>
     <div class="navegacao-header">
       <a href="level5.html" class="btn">Voltar uma fase</a>
       <h1>DevLearning</h1>
-      <a href="../Pagina_Inicial.html" class="btn"> Inicio </a>
+      <a href="../Pagina_Inicial.html" class="btn">Início</a>
     </div>
   </header>
 
   <!-- Título principal da página -->
   <section class="main-title">
     <h2>Level 6</h2>
-    <p>Descrição</p>
+    <p>Rodapé Informativo e Responsivo</p>
   </section>
-  
 
-   <!-- Rodapé -->
-    
-   <footer>
+  <!-- Rodapé fixado ao centro da página -->
+  <footer>
     <div class="container">
-        <h3>Contato</h3>
-        <p>Email: contato@devlearning.com</p>
-        <p>Telefone: (11) 98765-4321</p>
-        <p>WhatsApp: (11) 91234-5678</p>
-        <p>Instagram: @devlearning</p>
-        <p>Facebook: fb.com/devlearning</p>
-        <p>Endereço: Rua da Educação, 123 - São Paulo, SP</p>
-        <p>&copy; 2024 DevLearning. Todos os direitos reservados.</p>
+      <h3>Contato</h3>
+      <p>Email: contato@devlearning.com</p>
+      <p>Telefone: (11) 98765-4321</p>
+      <p>WhatsApp: (11) 91234-5678</p>
+      <p>Instagram: @devlearning</p>
+      <p>Facebook: fb.com/devlearning</p>
+      <p>Endereço: Rua da Educação, 123 - São Paulo, SP</p>
+      <p>&copy; 2024 DevLearning. Todos os direitos reservados.</p>
     </div>
-</footer>
+  </footer>
 
+  <!-- Seção de Objetivo -->
+  <section class="objective-section">
+    <h3>OBJETIVO</h3>
+    <p>Neste nível, seu objetivo é aprender a criar um rodapé informativo e responsivo, que se adapta a diferentes tamanhos de tela, incluindo links úteis, informações de contato e redes sociais integradas.</p>
+  </section>
+
+  <!-- Seção "O que é um RODAPÉ?" -->
+  <section class="about-footer-section">
+    <h3>O que é um RODAPÉ?</h3>
+    <p>Um rodapé é uma seção na parte inferior de uma página web que contém informações complementares, como links para políticas do site, informações de contato, e links para redes sociais. É crucial para a navegação e fornece informações úteis aos usuários.</p>
+  </section>
+
+  <!-- Seção dos passos -->
+  <section class="steps-section">
+    <h3>Como Criar um Rodapé Responsivo - Passos</h3>
+
+    <!-- Passo 1 -->
+    <div class="step">
+      <h4>Passo 1: Estrutura HTML</h4>
+      <p>Vamos começar criando a estrutura básica do rodapé. Usamos a tag <code>&lt;footer&gt;</code> para semântica e acessibilidade. Dentro dela, colocamos um <code>&lt;div&gt;</code> com a classe "container" para agrupar e organizar as informações.</p>
+      <p><strong>Motivo:</strong> A estrutura semântica ajuda motores de busca e leitores de tela a entenderem a função do rodapé.</p>
+      <div class="code-box">
+        <pre>
+&lt;footer&gt;
+  &lt;div class="container"&gt;
+    &lt;p&gt;Email: contato@devlearning.com&lt;/p&gt; <!-- Informação de contato -->
+    &lt;p&gt;Telefone: (11) 98765-4321&lt;/p&gt; <!-- Informação de contato -->
+  &lt;/div&gt;
+&lt;/footer&gt;
+        </pre>
+      </div>
+    </div>
+
+    <!-- Passo 2 -->
+    <div class="step">
+      <h4>Passo 2: Links Úteis</h4>
+      <p>Adicionamos links para páginas importantes como "Política de Privacidade" e "Termos de Uso". Usamos uma lista não ordenada <code>&lt;ul&gt;</code> para manter a organização e a estrutura.</p>
+      <p><strong>Motivo:</strong> Listas ajudam na acessibilidade e permitem fácil estilização.</p>
+      <div class="code-box">
+        <pre>
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href="privacidade.html"&gt;Política de Privacidade&lt;/a&gt;&lt;/li&gt; <!-- Link para política -->
+  &lt;li&gt;&lt;a href="termos.html"&gt;Termos de Uso&lt;/a&gt;&lt;/li&gt; <!-- Link para termos -->
+&lt;/ul&gt;
+        </pre>
+      </div>
+    </div>
+
+    <!-- Passo 3 -->
+    <div class="step">
+      <h4>Passo 3: Contato</h4>
+      <p>Inserimos informações de contato importantes, como telefone e redes sociais, para facilitar a comunicação com os usuários.</p>
+      <p><strong>Motivo:</strong> Ter múltiplas formas de contato aumenta a acessibilidade e a confiança dos usuários.</p>
+      <div class="code-box">
+        <pre>
+&lt;div class="contact-info"&gt;
+  &lt;p&gt;WhatsApp: (11) 91234-5678&lt;/p&gt; <!-- Contato via WhatsApp -->
+  &lt;p&gt;Instagram: @devlearning&lt;/p&gt; <!-- Link para Instagram -->
+&lt;/div&gt;
+        </pre>
+      </div>
+    </div>
+
+    <!-- Passo 4 -->
+    <div class="step">
+      <h4>Passo 4: Estilização com CSS</h4>
+      <p>Aplicamos CSS para estilizar o rodapé, ajustando cores, espaçamentos e fontes. Usamos flexbox para uma distribuição uniforme dos elementos.</p>
+      <p><strong>Motivo:</strong> Um design coerente e organizado melhora a experiência do usuário e a usabilidade.</p>
+      <div class="code-box">
+        <pre>
+footer {
+  background-color: #333; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto */
+  display: flex; /* Usando flexbox para layout */
+  justify-content: space-around; /* Distribuição uniforme */
+  padding: 20px; /* Espaçamento interno */
+}
+        </pre>
+      </div>
+    </div>
+
+    <!-- Passo 5 -->
+    <div class="step">
+      <h4>Passo 5: Tornando Responsivo</h4>
+      <p>Usamos media queries para ajustar o layout em telas menores. Isso garante que o rodapé seja fácil de ler e interagir em dispositivos móveis.</p>
+      <p><strong>Motivo:</strong> A responsividade é essencial para a acessibilidade e usabilidade em diversos dispositivos.</p>
+      <div class="code-box">
+        <pre>
+@media (max-width: 600px) {
+  footer {
+    flex-direction: column; /* Empilhar elementos verticalmente */
+    text-align: center; /* Centralizar texto */
+  }
+}
+        </pre>
+      </div>
+    </div>
+
+    <!-- Passo 6 -->
+    <div class="step">
+      <h4>Passo 6: Teste e Iteração</h4>
+      <p>Teste o rodapé em diferentes navegadores e dispositivos. Use ferramentas como Lighthouse para verificar a performance e acessibilidade.</p>
+      <p><strong>Motivo:</strong> Testar garante que o rodapé funcione corretamente para todos os usuários.</p>
+      <div class="code-box">
+        <pre>
+/* Teste o site e faça ajustes */
+        </pre>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Seção de Explicação dos Elementos -->
+  <section class="about-elements-section">
+    <h3>Estrutura do Rodapé Utilizada</h3>
+    <p>Este rodapé foi construído com os seguintes elementos:</p>
+    <ul>
+      <li><code>&lt;footer&gt;</code>: A estrutura principal do rodapé.</li>
+      <li><code>&lt;div class="container"&gt;</code>: Um contêiner que agrupa todas as informações.</li>
+      <li><code>&lt;h3&gt;</code>: O título para a seção de contato.</li>
+      <li><code>&lt;p&gt;</code>: Parágrafos que contêm informações de contato e redes sociais.</li>
+    </ul>
+  </section>
 
 </body>
 </html>

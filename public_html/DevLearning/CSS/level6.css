@@ -27,72 +27,172 @@
   .navegacao-header .btn:active {
     transform: translateY(0); /* Retorna à posição original quando pressionado */
   }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #222; /* Cor de fundo preta */
-    color: white;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Cabeçalho */
-  header {
-    background-color: #333;
-    padding: 15px;
-    display: flex;
-    justify-content: space-between; /* Distribui espaço entre os itens */
-    align-items: center; /* Alinha itens verticalmente */
-  }
 
-  header h1 {
-    margin: 0;
-    color: white;
-    text-align: center;
-    font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
-  }
-  
-  .navegacao-header {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; /* Ocupa toda a largura do cabeçalho */
-    align-items: center; /* Alinha itens verticalmente */
-  }
-  
-  .navegacao-header .btn {
-    margin: 0 10px; /* Margem lateral entre os botões */
-  }
-  
-  /* Título principal da página */
-  .main-title {
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .main-title h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-  }
-  
-  .main-title p {
-    font-size: 1.2em;
-  }
-  footer{
-    display:flex;
-    justify-content: center;
-    background-color: white;
-    height: 390px;
-    align-content: center;
-    align-items: center;
+/* Estilo Geral */
+body {
+  background-color: #222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-  }
+/* Cabeçalho com Navbar */
+header {
+  background-color: #333;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+}
 
-  footer .container{
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 18px 0;
-    width: 1000px;
-    height: 320px;
+/* Título "DevLearning" centralizado */
+header h1 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  flex-grow: 1;
+  font-family: 'Edu Australia VIC WA NT Hand Precursive', cursive;
+}
+
+
+
+/* Título principal da página */
+.main-title {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-title h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.main-title p {
+  font-size: 1.2em;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Seção de Objetivo e O que é um RODAPÉ */
+.objective-section, .about-footer-section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.objective-section h3, .about-footer-section h3 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.objective-section p, .about-footer-section p {
+  margin: 5px 0 15px;
+  color: white;
+}
+
+/* Seção de Passos */
+.steps-section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.steps-section h3 {
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.step {
+  margin-bottom: 30px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #222;
+}
+
+.step h4 {
+  color: #4CAF50;
+  margin-bottom: 10px;
+}
+
+.step p {
+  margin: 5px 0 15px;
+}
+
+/* Caixa de Código */
+.code-box {
+  background-color: #111;
+  border: 2px solid #4CAF50;
+  padding: 15px;
+  border-radius: 5px;
+  overflow-x: auto;
+  color: #4CAF50;
+}
+
+.code-box pre {
+  margin: 0;
+  font-family: monospace;
+  font-size: 0.9em;
+}
+
+/* Rodapé */
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 20px 0;
+  margin: 20px 0;
+}
+
+footer .container {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 18px 0;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Seção de Explicação dos Elementos */
+.about-elements-section {
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 80%;
+  background-color: #333;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.about-elements-section h3 {
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.about-elements-section p {
+  color: #ccc;
+  margin-bottom: 10px;
+}
+
+.about-elements-section ul {
+  list-style-type: none;
+  padding: 0;
+  color: #aaa;
+}
+
+.about-elements-section li {
+  margin: 5px 0;
+  padding: 8px;
+  background-color: #444;
+  border-radius: 5px;
+}
+
+.about-elements-section code {
+  color: #4CAF50;
 }
