@@ -88,11 +88,13 @@ header h1 {
 .objective-section h3, .about-footer-section h3 {
   color: #4CAF50;
   margin-bottom: 10px;
+  font-size: 35px;
 }
 
-.objective-section p, .about-footer-section p {
+.objective-section p, .about-footer-section p , .steps-section p {
   margin: 5px 0 15px;
   color: white;
+  font-size: 25px;
 }
 
 /* Seção de Passos */
@@ -107,7 +109,8 @@ header h1 {
 
 .steps-section h3 {
   color: #4CAF50;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
+  font-size: 35px;
 }
 
 .step {
@@ -119,7 +122,8 @@ header h1 {
 
 .step h4 {
   color: #4CAF50;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
+  font-size: 25px;
 }
 
 .step p {
