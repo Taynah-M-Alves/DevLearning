@@ -61,5 +61,5 @@ Documentação: Taynah de Micheli Alves
 
 Autores
 
-Taynah de Micheli Alves,\Bruno Bonfim Gradella,\ Renan Albernaz,\João Lucas.
+Taynah de Micheli Alves,\ Bruno Bonfim Gradella,\  Renan Albernaz,\ João Lucas.
  
